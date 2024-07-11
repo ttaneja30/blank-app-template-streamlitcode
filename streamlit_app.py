@@ -11,3 +11,11 @@ def file_selector(folder_path='.'):
 filename = file_selector()
 st.write('You selected `%s`' % filename)
 st.write("Translate selected video to a different language")
+
+c1, c2 = st.columns(2)
+with c1:
+    from = st.selectbox("Translate From ", ('English','Spanish','German'))
+with c2:
+    to = st.selectbox("Translate To ", ('English','Spanish','German'))
+
+translateButton = st.form_submit_button(label = 'Translate')
