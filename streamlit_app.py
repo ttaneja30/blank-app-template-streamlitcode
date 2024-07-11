@@ -10,3 +10,4 @@ def file_selector(folder_path='.'):
 
 filename = file_selector()
 st.write('You selected `%s`' % filename)
+st.write("Translate selected video to a different language")
