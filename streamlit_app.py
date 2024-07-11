@@ -2,8 +2,7 @@ import streamlit as st
 import os
 
 st.title("Video Translator - Upload & Translate")
-st.title("Please upload your video here")
-st.file_uploader(label = 'Upload your video')
+st.file_uploader(label = "Upload your video here")
 def file_selector(folder_path='.'):
     filenames = os.listdir(folder_path)
     selected_filename = st.selectbox('Please upload your video', filenames)
