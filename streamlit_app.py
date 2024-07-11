@@ -14,7 +14,7 @@ st.write("Translate selected video to a different language")
 
 c1, c2 = st.columns(2)
 with c1:
-    from = st.selectbox("Translate From ", ('English','Spanish','German'))
+    from_ = st.selectbox("Translate From ", ('English','Spanish','German'))
 with c2:
     to = st.selectbox("Translate To ", ('English','Spanish','German'))
 
