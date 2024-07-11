@@ -18,4 +18,4 @@ with c1:
 with c2:
     to = st.selectbox("Translate To ", ('English','Spanish','German'))
 
-translateButton = st.form_submit_button(label = 'Translate')
+translateButton = st.button(label = 'Translate')
